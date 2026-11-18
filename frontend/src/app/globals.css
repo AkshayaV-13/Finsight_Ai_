@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --emerald-dark: #0B251D;
+  --emerald-primary: #0F382C;
+  --emerald-light: #164E3D;
+  --emerald-subtle: #EAF2EF;
+  --gold-primary: #D4AF37;
+  --gold-muted: #B8972E;
+  --gold-subtle: #FBF8EE;
+  --ivory-bg: #F9F8F5;
+  --card-bg: #FFFFFF;
+  --charcoal-dark: #1A1F1D;
+  --charcoal-body: #333C37;
+  --charcoal-muted: #5E6963;
+}
+
+body {
+  background-color: var(--ivory-bg);
+  color: var(--charcoal-dark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Financial Card Styles */
+.fin-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(15, 56, 44, 0.12);
+  border-radius: 12px;
+  padding: 20px 22px;
+  box-shadow: 0 2px 6px rgba(11, 37, 29, 0.04);
+  transition: all 0.2s ease;
+}
+
+.fin-card:hover {
+  border-color: rgba(15, 56, 44, 0.25);
+  box-shadow: 0 6px 18px rgba(11, 37, 29, 0.07);
+}
+
+.badge-reported {
+  background: #EAF2EF;
+  color: #0F382C;
+  border: 1px solid rgba(15, 56, 44, 0.2);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.badge-derived {
+  background: #FBF8EE;
+  color: #9A7718;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.badge-flag-critical {
+  background: #FDF2F2;
+  color: #9B1C1C;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.badge-flag-info {
+  background: #F0FDF4;
+  color: #166534;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
