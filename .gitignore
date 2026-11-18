@@ -2,20 +2,48 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyd
 
 # Virtual environments
 .venv/
 venv/
 env/
+ENV/
 
-# Large binary / database files (auto-synced from Hugging Face dataset Akshaya-V/finsight_ai_dataset)
+# Environment files and credentials (NEVER commit secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Large datasets & ChromaDB binary vector stores (downloaded via Hugging Face Hub at startup)
 vectordb/
 documents/
 embeddings/
+data/
+backend/data/
+*.sqlite3
+*.sqlite3-journal
 
-# Streamlit local logs
+# Node & Next.js frontend dependencies and build outputs
+node_modules/
+.next/
+out/
+build/
+dist/
+.vercel
+
+# Logs and debug files
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 streamlit_stdout.log
 streamlit_stderr.log
+
+# System files
 .DS_Store
 Thumbs.db
